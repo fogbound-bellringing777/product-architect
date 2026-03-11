@@ -39,20 +39,31 @@ For EVERY feature:
 - Funding: Is the raise amount sufficient for 18-24 months? (Agent 18)
 
 ### Pass 4: Cross-Agent Consistency Audit
-Check every pair of agents for contradictions:
-- PRD (03) ↔ Design (04): Do screens match requirements? All states covered?
-- PRD (03) ↔ Engineering (05): Are all features technically feasible as specified?
-- Engineering (05) ↔ DevOps (14): Does infra support the architecture?
-- Security (06) ↔ Engineering (05): Every data flow encrypted? Auth on every endpoint?
-- Finance (15) ↔ Marketing (10): Marketing budget aligned with financial model?
-- Finance (15) ↔ People (18): Salary budget matches comp bands × headcount?
-- Operations (16) ↔ BAU (17): Every SOP has a maintenance cadence?
-- Compliance (24) ↔ Everything: Every data flow, user flow, and policy reviewed?
-- Strategy (02) ↔ Roadmap: Timeline realistic given engineering estimates?
-- Trust&Safety (25) ↔ PRD (03): UGC features have moderation plan?
-- Fraud (26) ↔ Finance (15): Fraud loss rate modeled in P&L?
-- AI/ML (27) ↔ Security (06): ML models audited for bias? Data pipeline secure?
-- ESG (28) ↔ PR (19): ESG commitments match communications plan?
+Check every pair of agents for contradictions. When found, DO NOT silently fix.
+FLAG explicitly with: "⚠️ INCONSISTENCY: [Agent X] says [A]. [Agent Y] says [B]."
+
+MANDATORY CROSS-CHECKS:
+- PRD (04) ↔ Design (05): Do screens match requirements? All states covered?
+- PRD (04) ↔ Engineering (06): Are all features technically feasible as specified?
+- Engineering (06) ↔ DevOps (08): Does infra support the architecture?
+- Security (09) ↔ Engineering (06): Every data flow encrypted? Auth on every endpoint?
+- Finance (18) ↔ Marketing (15): Marketing budget aligned with financial model?
+- Finance (18) ↔ People (22): Salary budget matches comp bands × headcount?
+- Operations (19) ↔ BAU (20): Every SOP has a maintenance cadence?
+- Compliance (11) ↔ Everything: Every data flow, user flow, and policy reviewed?
+- Strategy (03) ↔ Engineering (06): Timeline realistic given engineering estimates?
+- Trust&Safety (12) ↔ PRD (04): UGC features have moderation plan?
+- Fraud (13) ↔ Finance (18): Fraud loss rate modeled in P&L?
+- AI/ML (29) ↔ Security (09): ML models audited for bias? Data pipeline secure?
+- ESG (27) ↔ PR (25): ESG commitments match communications plan?
+- People (22) ↔ Strategy (03): Hiring plan delivers the team the roadmap requires on time?
+
+CONFLICT RESOLUTION IN AUDIT:
+For each inconsistency found:
+1. Document: What conflicts, between which agents, on what specific point
+2. Apply hierarchy: Compliance > Security > Finance > Chief Reviewer (see SKILL.md governance rules)
+3. Recommend: Specific resolution with reasoning
+4. Record: Add to KDR as "Audit Decision #N: [conflict] resolved as [resolution]"
 
 ### Pass 5: Organizational Readiness
 - Org structure (18) right for current stage? (Check corporate-scaling.md)

@@ -119,6 +119,81 @@ Web UI for non-technical founders — journey tracker with checklists.
 
 ---
 
+## Cross-Agent Governance (THE CONSISTENCY ENGINE)
+
+These are HARD RULES, not suggestions. They prevent conflicting outputs across agents.
+
+### Rule 1: Authority Hierarchy
+
+```
+OVERRIDE AUTHORITY (higher overrides lower):
+Level 4 — Agent 11 (Compliance & Ethics): OVERRIDE on ANY agent output that
+           creates legal, regulatory, or ethical risk. Non-negotiable.
+Level 3 — Agent 09 (Security): OVERRIDE on any agent output that creates a
+           security vulnerability, exposes user data, or violates encryption standards.
+Level 2 — Agent 18 (Finance): VETO on any agent output with cost/revenue
+           implications that break unit economics or exceed budget.
+Level 1 — Agent 00 (Chief Reviewer): VETO on any agent output for quality,
+           consistency, or completeness issues. Final sign-off authority.
+
+IN PRACTICE:
+- If Agent 06 (Engineering) designs a system that stores card numbers →
+  Agent 09 (Security) OVERRIDES: "Tokenize via Razorpay/Stripe. Never store raw PANs."
+- If Agent 15 (Marketing) proposes a ₹25L campaign but Agent 18 (Finance)
+  set monthly burn cap at ₹20L → Agent 18 VETOES until budget is reconciled.
+- If Agent 04 (PRD) specs a feature collecting children's data without consent →
+  Agent 11 (Compliance) OVERRIDES: "COPPA/DPDP violation. Add parental consent flow."
+```
+
+### Rule 2: Parallel Agents (run alongside EVERY phase)
+
+```
+These agents don't wait for their "phase" — they audit continuously:
+□ Agent 01 (Proactive Advisor): Surfaces blind spots at every phase
+□ Agent 09 (Security): Reviews every data flow, API, and auth decision
+□ Agent 11 (Compliance): Checks every feature against regulatory requirements
+□ Agent 18 (Finance): Validates cost implications of every decision
+```
+
+### Rule 3: Conflict Detection Protocol
+
+```
+WHEN TWO AGENTS DISAGREE:
+1. STOP. Do not proceed with either recommendation.
+2. STATE the conflict explicitly:
+   "⚠️ CONFLICT: Agent [X] recommends [A] because [reason].
+    Agent [Y] recommends [B] because [reason]. These are incompatible."
+3. APPLY the hierarchy: Higher-authority agent's recommendation wins.
+4. DOCUMENT in KDR: "Decision #N: Conflict between [X] and [Y].
+   Resolved in favor of [winner] because [hierarchy rule + reasoning]."
+5. FLAG for user: "This conflict was auto-resolved. Review Decision #N
+   if you want to override."
+
+COMMON CONFLICTS AND RESOLUTION:
+| Agent A wants | Agent B wants | Resolution |
+|--------------|--------------|------------|
+| Ship fast (Eng) | Full pen test first (Security) | Security wins. Ship after pen test. |
+| Collect more data (Analytics) | Minimize data collection (Compliance) | Compliance wins. Collect only what's necessary. |
+| Lower prices (Marketing) | Maintain margins (Finance) | Finance wins unless Marketing proves LTV increase. |
+| Rich UX with tracking (Design) | No tracking without consent (Compliance) | Compliance wins. Implement consent-first tracking. |
+| Aggressive growth targets (Strategy) | Sustainable team pace (Wellness) | Escalate to user. Present both with tradeoffs. |
+```
+
+### Rule 4: Cross-Agent Validation Checkpoints
+
+```
+Before ANY phase is marked complete, validate:
+□ Does this phase's output REFERENCE the same user personas as Agent 02 (Discovery)?
+□ Does any cost or revenue claim MATCH Agent 18 (Finance) projections?
+□ Does any data flow COMPLY with Agent 11 (Compliance) policies?
+□ Does any technical decision ALIGN with Agent 06 (Engineering) architecture?
+□ Does any timeline claim FIT the roadmap from Agent 03 (Strategy)?
+
+If ANY answer is NO → flag the inconsistency, resolve it, THEN mark phase complete.
+```
+
+---
+
 ## How It Works
 
 1. **Read `SMART-LOADER.md`** — routes your request to the right agents

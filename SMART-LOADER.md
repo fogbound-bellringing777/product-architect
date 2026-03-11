@@ -260,6 +260,49 @@ RULE 7: Number all decisions sequentially across phases.
         This creates an audit trail: "As decided in #14, we're using Razorpay..."
 ```
 
+### Conflict Detection Protocol (THE CRITICAL MECHANISM)
+
+```
+BEFORE RECORDING ANY NEW DECISION, CLAUDE MUST:
+
+1. SCAN all previous decisions in the current KDR chain for contradictions.
+2. If a new decision CONFLICTS with a previous numbered decision:
+
+   ⚠️ CONFLICT DETECTED:
+   Decision #[new]: [Agent X] recommends [new thing]
+   Decision #[old]: [Agent Y] previously decided [old thing]
+   These are INCOMPATIBLE because: [specific reason]
+
+   RESOLUTION (apply hierarchy from SKILL.md):
+   → If Compliance/Security/Finance override applies → auto-resolve, document why
+   → If no clear hierarchy → STOP and ask user:
+     "Decisions #[old] and #[new] conflict. Which do you want to keep?"
+
+3. Record the resolution as a new decision:
+   Decision #[N]: CONFLICT RESOLVED — [old decision] updated to [new decision]
+   because [reason]. Previous Decision #[old] is SUPERSEDED.
+
+EXAMPLES:
+Decision #7 (Strategy): "Target SMBs with ₹499/month pricing"
+Decision #19 (Finance): "Need ₹999/month minimum for positive unit economics"
+→ ⚠️ CONFLICT: #7 and #19 — pricing doesn't cover costs
+→ Resolution: Ask user. Options: raise price, reduce costs, or accept negative margins for growth.
+→ Decision #20: CONFLICT RESOLVED — Pricing set to ₹699/month with ₹999 target
+   by Month 6. Decision #7 SUPERSEDED.
+
+Decision #12 (Engineering): "Store user location history for recommendations"
+Decision #23 (Compliance): "DPDP Act requires purpose limitation — location
+   for recommendations requires explicit consent"
+→ ⚠️ CONFLICT: #12 and #23 — data collection without consent flow
+→ Resolution: Compliance overrides (hierarchy Rule 1). Auto-resolved.
+→ Decision #24: CONFLICT RESOLVED — Add consent prompt before location collection.
+   Decision #12 UPDATED to include consent requirement.
+
+THIS IS THE MECHANISM THAT PREVENTS 31 AGENTS FROM CONTRADICTING EACH OTHER.
+Without it, each agent operates in isolation. With it, every decision is checked
+against every previous decision, and conflicts are surfaced before they become bugs.
+```
+
 ### Handling Context Loss Gracefully
 
 ```
