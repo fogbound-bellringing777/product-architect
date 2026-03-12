@@ -1,5 +1,8 @@
 # Southeast Asia Compliance Deep-Dive
 
+> **⚠️ DISCLAIMER:** Laws change. This reflects early 2026 status. Always verify
+> with local legal counsel before relying on any specific requirement.
+
 ## Singapore
 - PDPA: Consent-based. DPO mandatory. Breach notification <3 days to PDPC if significant.
 - Payments: MAS (Monetary Authority of Singapore) licensing — Payment Services Act 2019.

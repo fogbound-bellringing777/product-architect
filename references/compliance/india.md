@@ -1,5 +1,8 @@
 # India Compliance Deep-Dive
 
+> **⚠️ DISCLAIMER:** Laws change. This reflects early 2026 status. Always verify
+> with local legal counsel before relying on any specific requirement.
+
 ## Data Protection: DPDP Act 2023
 - Consent: Explicit, informed, specific, freely given, withdrawable
 - Purpose limitation: Use ONLY for stated purpose

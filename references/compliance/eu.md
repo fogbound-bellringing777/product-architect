@@ -1,5 +1,8 @@
 # EU Compliance Deep-Dive
 
+> **⚠️ DISCLAIMER:** Laws change. This reflects early 2026 status. Always verify
+> with local legal counsel before relying on any specific requirement.
+
 ## Data Protection: GDPR
 - Lawful basis: Consent, contract, legitimate interest, legal obligation, vital interest, public task
 - DPO: Mandatory if large-scale processing of special categories or systematic monitoring

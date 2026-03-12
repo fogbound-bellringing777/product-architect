@@ -188,6 +188,18 @@ Contributions welcome:
 
 MIT — use it however you want. Build great products.
 
+## Important Disclaimers
+
+**Read [DISCLAIMER.md](DISCLAIMER.md) before using this in production.**
+
+This repository is an educational and operational reference framework created through
+human-AI collaboration. It is **not a substitute for professional legal, financial,
+security, or HR advice.** All policies, compliance frameworks, and legal templates
+must be reviewed by qualified professionals before adoption. The 14 policy drafts,
+country compliance guides, salary bands, and financial models are starting frameworks —
+not final documents. Many processes described here require qualified human involvement
+and cannot be fully automated. See DISCLAIMER.md for full details.
+
 ---
 
 *Built through iterative collaboration between a human product thinker and Claude (Anthropic). Each agent was refined across multiple sessions until every department, function, and process was covered with consulting-grade depth.*

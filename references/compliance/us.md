@@ -1,5 +1,8 @@
 # US Compliance Deep-Dive
 
+> **⚠️ DISCLAIMER:** Laws change. This reflects early 2026 status. Always verify
+> with local legal counsel before relying on any specific requirement.
+
 ## Data Privacy (No Federal Omnibus — State Patchwork)
 - CCPA/CPRA (California): Right to know/delete/opt-out of sale. Applies if: >$25M revenue OR >100K consumers' data OR >50% revenue from selling data. CPPA enforces.
 - Virginia VCDPA, Colorado CPA, Connecticut CTDPA, Utah UCPA, Texas TDPSA: Varying requirements, mostly opt-out models. More states adding annually.

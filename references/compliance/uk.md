@@ -1,5 +1,8 @@
 # UK Compliance Deep-Dive
 
+> **⚠️ DISCLAIMER:** Laws change. This reflects early 2026 status. Always verify
+> with local legal counsel before relying on any specific requirement.
+
 ## Data Protection: UK GDPR + DPA 2018
 - Post-Brexit: Mirrors EU GDPR but enforced by ICO (Information Commissioner's Office)
 - UK adequacy: EU has granted adequacy to UK (data can flow freely EU↔UK for now)

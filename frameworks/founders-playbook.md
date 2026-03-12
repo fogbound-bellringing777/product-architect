@@ -1,5 +1,9 @@
 # The Founder's Playbook: Zero to Legend
 
+> **⚠️ DISCLAIMER:** This is a general guide, not professional advice. Consult
+> lawyers, accountants, and relevant professionals for your specific situation.
+> See [DISCLAIMER.md](../DISCLAIMER.md).
+
 ## Purpose
 This is the ONE document a solo founder reads on Day 0. It answers: What do I do?
 In what order? How much does it cost? When do I hire? When do I raise? How do I

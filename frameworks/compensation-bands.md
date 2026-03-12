@@ -1,5 +1,9 @@
 # Compensation & Salary Bands Framework
 
+> **⚠️ DISCLAIMER:** Salary data is approximate as of early 2026 and will age.
+> Always benchmark against current market data before making offers.
+> See [DISCLAIMER.md](../DISCLAIMER.md).
+
 ## Compensation Philosophy
 
 ```
