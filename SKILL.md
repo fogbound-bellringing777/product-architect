@@ -1,206 +1,175 @@
 ---
 name: product-architect
-description: >
-  The definitive product development system. 31-agent multi-department CPO system with
-  smart-loading architecture. Covers complete lifecycle from solo founder Day 0 through
-  IPO and beyond. Geography-agnostic. Triggers on any product-related request.
-  Read SMART-LOADER.md first for context-efficient loading.
+description: |
+  Complete product development system with 31 specialized agents and 22 frameworks.
+  Use when user asks to build a product, write a PRD, create a roadmap, plan an MVP,
+  design an app, do a security audit, create a financial model, plan hiring, launch a
+  product, set up operations, prepare for IPO, write a compliance policy, or asks
+  "how do I start a company". Also use when user says "help me plan", "product strategy",
+  "go-to-market", "fundraising", "pitch deck", "unit economics", "competitive analysis",
+  "user personas", "sprint planning", "SOP", "checklist for", or any product-related request.
+  Do NOT use for general knowledge questions, coding tutorials, or creative writing unrelated
+  to product development.
+license: MIT
+compatibility: |
+  Works on Claude.ai, Claude Code, and API. No external dependencies required.
+  Enhanced when used with anti-slop-design skill for UI/UX work.
+metadata:
+  author: ankitjha67
+  version: 2.0.0
+  category: product-development
+  tags: [product-management, startup, prd, strategy, compliance, finance, operations, hiring, launch, saas, marketplace]
+  repository: https://github.com/ankitjha67/product-architect
+  agents: 31
+  frameworks: 22
 ---
 
 # Product Architect
 
-**31 agents. 20 frameworks. 12,000+ lines. Solo founder Day 0 → IPO and beyond.**
+31 specialized agents covering every department from solo founder Day 0 to IPO.
+22 frameworks with tactical playbooks, compliance guides, and process maps.
 
-Read `SMART-LOADER.md` first — it routes your request to only the agents you need.
+## Critical: Read SMART-LOADER.md First
 
----
+Before loading any agent files, consult `SMART-LOADER.md`. It contains:
+- Request classification and agent routing (which agents to load)
+- Context budget rules (never load more than 5 agents per turn)
+- Multi-intent decomposition (handling complex requests)
+- KDR memory system (Key Decision Records that survive chat compaction)
+- Conflict detection protocol (what to do when agents disagree)
 
-## Agent Roster (Lifecycle Order)
+## Instructions
 
-### Audit & Advisory
-| # | Agent | File | Role |
-|---|-------|------|------|
-| 00 | **Chief Reviewer** | `00-chief-reviewer.md` | Final audit, veto power, cross-agent consistency |
-| 01 | **Proactive Advisor** | `01-proactive-advisor.md` | Ideas, blind spots, best practices (runs parallel) |
+### Step 1: Route the Request
 
-### Product Development (02–06)
-| # | Agent | File | Role |
-|---|-------|------|------|
-| 02 | **Discovery** | `02-discovery.md` | Market research, personas, competitive intelligence |
-| 03 | **Strategy** | `03-strategy.md` | Vision, business model, roadmap, prioritization |
-| 04 | **PRD** | `04-prd.md` | Requirements, user stories, flows, edge cases |
-| 05 | **Design** | `05-design.md` | UX/UI, design systems, every screen every state |
-| 06 | **Engineering** | `06-engineering.md` | Architecture, APIs, data models, tech stack |
-
-### Build & Test (07–08)
-| # | Agent | File | Role |
-|---|-------|------|------|
-| 07 | **Testing & QA** | `07-testing-qa.md` | Unit/integration/E2E/load/pen/chaos testing |
-| 08 | **DevOps & SRE** | `08-devops-sre.md` | CI/CD, monitoring, alerting, disaster recovery |
-
-### Protect & Comply (09–13)
-| # | Agent | File | Role |
-|---|-------|------|------|
-| 09 | **Security** | `09-security.md` | Security audit, PCI-DSS, OWASP, data protection |
-| 10 | **Legal & IP** | `10-legal-ip.md` | Trademarks, patents, contracts, open source |
-| 11 | **Compliance & Ethics** | `11-compliance-ethics.md` | 14 policies, anti-corruption, whistleblower, audit |
-| 12 | **Trust & Safety** | `12-trust-safety.md` | Content moderation, abuse prevention, CSAM reporting |
-| 13 | **Fraud Operations** | `13-fraud-operations.md` | Transaction fraud, chargebacks, abuse detection |
-
-### Launch & Grow (14–17)
-| # | Agent | File | Role |
-|---|-------|------|------|
-| 14 | **Launch & GTM** | `14-launch-gtm.md` | Go-to-market, growth loops, phased rollout |
-| 15 | **Marketing & Sales** | `15-marketing-sales.md` | Full-funnel marketing, brand, sales playbook |
-| 16 | **Analytics** | `16-analytics.md` | Data pipelines, dashboards, A/B testing, metrics |
-| 17 | **Customer Success** | `17-customer-success.md` | Support tiers, NPS, churn prevention, community |
-
-### Operate & Scale (18–21)
-| # | Agent | File | Role |
-|---|-------|------|------|
-| 18 | **Finance** | `18-finance.md` | P&L, unit economics, pricing, fundraising |
-| 19 | **Operations** | `19-operations.md` | SOPs, vendor management, supply chain, quality |
-| 20 | **BAU** | `20-bau.md` | Daily/weekly/monthly rhythms, governance, BCP |
-| 21 | **Innovation** | `21-innovation-programs.md` | Hackathons, bug bounty, R&D, procurement |
-
-### People & Culture (22–24)
-| # | Agent | File | Role |
-|---|-------|------|------|
-| 22 | **People & HR** | `22-people-hr.md` | Hiring, culture, performance, retention, org design |
-| 23 | **L&D** | `23-learning-development.md` | Training, skill matrices, career ladders, knowledge |
-| 24 | **Wellness** | `24-wellness-performance.md` | Mental health, productivity, burnout prevention |
-
-### Corporate & Governance (25–28)
-| # | Agent | File | Role |
-|---|-------|------|------|
-| 25 | **PR & Comms** | `25-pr-communications.md` | Media, crisis comms, CSR, employer branding |
-| 26 | **Governance & IPO** | `26-governance-ipo.md` | Board, governance, IPO, roadshows, cap table |
-| 27 | **ESG** | `27-esg-sustainability.md` | Carbon, DEI, sustainability reporting |
-| 28 | **Govt Relations** | `28-government-relations.md` | Regulatory affairs, sandboxes, policy engagement |
-
-### Specialized (29–30)
-| # | Agent | File | Role |
-|---|-------|------|------|
-| 29 | **Data & AI** | `29-data-ai-strategy.md` | ML lifecycle, responsible AI, LLM strategy |
-| 30 | **Platform** | `30-platform-ecosystem.md` | API-as-product, marketplace dynamics, ecosystems |
-
----
-
-## Frameworks (20)
-
-| Framework | Purpose |
-|-----------|---------|
-| `founders-playbook.md` | **START HERE** — week-by-week, costs, fundraising, IP, legal |
-| `consulting-frameworks.md` | McKinsey 7S, Porter's, Blue Ocean, BCG, JTBD, PESTEL |
-| `prd-framework.md` | Complete PRD template |
-| `mvp-framework.md` | MVP scoping, cut test, anti-patterns |
-| `roadmap-framework.md` | 4-horizon phased roadmap with dependencies |
-| `user-flows-framework.md` | Happy/unhappy/failure path mapping |
-| `stress-test-framework.md` | 200+ edge cases humans miss |
-| `ab-testing-framework.md` | Experimentation with statistical rigor |
-| `risk-matrix.md` | 40+ risks with L×I scoring |
-| `global-compliance.md` | Regulatory overview for 30+ countries |
-| `accessibility-i18n.md` | WCAG, RTL, CJK, localization |
-| `sop-process-maps.md` | 20+ SOPs with process maps + automation index |
-| `compensation-bands.md` | Salary bands by role/level/geography + equity + maintenance |
-| `universal-checklists.md` | Dynamic checklist generator for ANY scenario |
-| `corporate-scaling.md` | Solo founder → IPO with org charts per stage |
-| `product-lifecycle.md` | Build→Measure→Learn cycle, sunsetting |
-| `competitive-war-room.md` | Ongoing competitive intelligence |
-| `continuous-improvement.md` | Lean, Six Sigma, Kaizen, Kotter, ADKAR |
-| `physical-ops-pmi.md` | Facility management + post-merger integration |
-| `coverage-audit.md` | Complete coverage verification |
-
-## Country Deep-Dives: `references/compliance/`
-India | US | EU | UK | Southeast Asia (SG, ID, TH, VN, PH, MY)
-
-## Interactive Tool: `tools/navigator.jsx`
-Web UI for non-technical founders — journey tracker with checklists.
-
----
-
-## Cross-Agent Governance (THE CONSISTENCY ENGINE)
-
-These are HARD RULES, not suggestions. They prevent conflicting outputs across agents.
-
-### Rule 1: Authority Hierarchy
+Read `SMART-LOADER.md` to classify the request and identify which agents to load.
 
 ```
-OVERRIDE AUTHORITY (higher overrides lower):
-Level 4 — Agent 11 (Compliance & Ethics): OVERRIDE on ANY agent output that
-           creates legal, regulatory, or ethical risk. Non-negotiable.
-Level 3 — Agent 09 (Security): OVERRIDE on any agent output that creates a
-           security vulnerability, exposes user data, or violates encryption standards.
-Level 2 — Agent 18 (Finance): VETO on any agent output with cost/revenue
-           implications that break unit economics or exceed budget.
-Level 1 — Agent 00 (Chief Reviewer): VETO on any agent output for quality,
-           consistency, or completeness issues. Final sign-off authority.
-
-IN PRACTICE:
-- If Agent 06 (Engineering) designs a system that stores card numbers →
-  Agent 09 (Security) OVERRIDES: "Tokenize via Razorpay/Stripe. Never store raw PANs."
-- If Agent 15 (Marketing) proposes a ₹25L campaign but Agent 18 (Finance)
-  set monthly burn cap at ₹20L → Agent 18 VETOES until budget is reconciled.
-- If Agent 04 (PRD) specs a feature collecting children's data without consent →
-  Agent 11 (Compliance) OVERRIDES: "COPPA/DPDP violation. Add parental consent flow."
+QUICK ROUTING:
+"Write a PRD"           → agents/04-prd.md + frameworks/prd-framework.md
+"Design an app"         → agents/05-design.md (+ anti-slop-design skill)
+"Product roadmap"       → agents/02-discovery.md + agents/03-strategy.md
+"Financial model"       → agents/18-finance.md
+"Security audit"        → agents/09-security.md + agents/11-compliance-ethics.md
+"Marketing plan"        → agents/15-marketing-sales.md + frameworks/30-day-launch-engine.md
+"How to start"          → frameworks/founders-playbook.md
+"Checklist for [X]"     → frameworks/universal-checklists.md
+"Full product"          → Phased execution (see SMART-LOADER.md Phase Plan)
 ```
 
-### Rule 2: Parallel Agents (run alongside EVERY phase)
+### Step 2: Load and Execute
+
+Load the primary agent file, produce the deliverable, then validate with
+secondary agents if context budget allows.
 
 ```
-These agents don't wait for their "phase" — they audit continuously:
-□ Agent 01 (Proactive Advisor): Surfaces blind spots at every phase
-□ Agent 09 (Security): Reviews every data flow, API, and auth decision
-□ Agent 11 (Compliance): Checks every feature against regulatory requirements
-□ Agent 18 (Finance): Validates cost implications of every decision
+LOADING PRIORITY:
+1. SMART-LOADER.md (routing — always)
+2. Primary agent (produces the deliverable)
+3. Relevant framework (template/structure)
+4. Secondary agent (validation — if budget allows)
 ```
 
-### Rule 3: Conflict Detection Protocol
+### Step 3: Enforce Cross-Agent Governance
+
+When multiple agents are active, apply the authority hierarchy:
 
 ```
-WHEN TWO AGENTS DISAGREE:
-1. STOP. Do not proceed with either recommendation.
-2. STATE the conflict explicitly:
-   "⚠️ CONFLICT: Agent [X] recommends [A] because [reason].
-    Agent [Y] recommends [B] because [reason]. These are incompatible."
-3. APPLY the hierarchy: Higher-authority agent's recommendation wins.
-4. DOCUMENT in KDR: "Decision #N: Conflict between [X] and [Y].
-   Resolved in favor of [winner] because [hierarchy rule + reasoning]."
-5. FLAG for user: "This conflict was auto-resolved. Review Decision #N
-   if you want to override."
-
-COMMON CONFLICTS AND RESOLUTION:
-| Agent A wants | Agent B wants | Resolution |
-|--------------|--------------|------------|
-| Ship fast (Eng) | Full pen test first (Security) | Security wins. Ship after pen test. |
-| Collect more data (Analytics) | Minimize data collection (Compliance) | Compliance wins. Collect only what's necessary. |
-| Lower prices (Marketing) | Maintain margins (Finance) | Finance wins unless Marketing proves LTV increase. |
-| Rich UX with tracking (Design) | No tracking without consent (Compliance) | Compliance wins. Implement consent-first tracking. |
-| Aggressive growth targets (Strategy) | Sustainable team pace (Wellness) | Escalate to user. Present both with tradeoffs. |
+Level 4 (highest): Agent 11 (Compliance) — OVERRIDE on legal/regulatory risk
+Level 3: Agent 09 (Security) — OVERRIDE on security vulnerabilities
+Level 2: Agent 18 (Finance) — VETO on budget/cost violations
+Level 1: Agent 00 (Chief Reviewer) — VETO on quality/consistency
 ```
 
-### Rule 4: Cross-Agent Validation Checkpoints
+If two agents produce conflicting recommendations:
+1. STOP — do not proceed with either
+2. STATE the conflict explicitly
+3. APPLY the hierarchy (higher authority wins)
+4. DOCUMENT in KDR with decision number
+5. FLAG for user review
 
+### Step 4: Output Key Decision Records
+
+After every phase, output a structured KDR block capturing all decisions,
+specs, open items, and artifacts. KDRs survive chat compaction.
+Full KDR format is in `SMART-LOADER.md`.
+
+## Agent Directory
+
+Audit: `00-chief-reviewer` `01-proactive-advisor`
+Product: `02-discovery` `03-strategy` `04-prd` `05-design` `06-engineering`
+Build: `07-testing-qa` `08-devops-sre`
+Protect: `09-security` `10-legal-ip` `11-compliance-ethics` `12-trust-safety` `13-fraud-operations`
+Launch: `14-launch-gtm` `15-marketing-sales` `16-analytics` `17-customer-success`
+Operate: `18-finance` `19-operations` `20-bau` `21-innovation-programs`
+People: `22-people-hr` `23-learning-development` `24-wellness-performance`
+Corporate: `25-pr-communications` `26-governance-ipo` `27-esg-sustainability` `28-government-relations`
+Specialized: `29-data-ai-strategy` `30-platform-ecosystem`
+
+All agent files are in `agents/` directory.
+
+## Framework Directory
+
+All framework files are in `frameworks/` directory:
+`founders-playbook` `30-day-launch-engine` `scenario-playbooks` `sop-process-maps`
+`compensation-bands` `consulting-frameworks` `stress-test-framework` `universal-checklists`
+`global-compliance` `corporate-scaling` `institutional-memory` `prd-framework`
+`mvp-framework` `roadmap-framework` `user-flows-framework` `risk-matrix`
+`ab-testing-framework` `accessibility-i18n` `product-lifecycle` `competitive-war-room`
+`continuous-improvement` `physical-ops-pmi` `coverage-audit`
+
+Country compliance: `references/compliance/` — india, us, eu, uk, sea.
+
+## Examples
+
+Example 1: Single-topic request
 ```
-Before ANY phase is marked complete, validate:
-□ Does this phase's output REFERENCE the same user personas as Agent 02 (Discovery)?
-□ Does any cost or revenue claim MATCH Agent 18 (Finance) projections?
-□ Does any data flow COMPLY with Agent 11 (Compliance) policies?
-□ Does any technical decision ALIGN with Agent 06 (Engineering) architecture?
-□ Does any timeline claim FIT the roadmap from Agent 03 (Strategy)?
-
-If ANY answer is NO → flag the inconsistency, resolve it, THEN mark phase complete.
+User: "Write a PRD for a payment feature"
+→ Load agents/04-prd.md + frameworks/prd-framework.md
+→ Produce PRD with: happy path, error states, edge cases, acceptance criteria
+→ Output KDR with all decisions
 ```
 
----
+Example 2: Full product build
+```
+User: "Build me a food delivery app for Bangalore"
+→ Phase A: agents/02 + 03 → Discovery brief + strategy + KDR-A
+→ Phase B: agents/04 + 05 → PRD + design + KDR-B
+→ Phase C: agents/06 + 07 + 08 → Architecture + testing + DevOps + KDR-C
+→ Phase D: agents/18 + 19 + 15 → Finance + ops + marketing + KDR-D
+→ Phase E: agents/11 + 22 + 26 → Compliance + hiring + governance + KDR-E
+→ Phase F: agents/00 + 01 → Final 6-pass audit + proactive suggestions
+```
 
-## How It Works
+Example 3: Quick reference
+```
+User: "What salary should I pay a senior engineer in Bangalore?"
+→ Load frameworks/compensation-bands.md
+→ Answer: L3 Senior, Tier 1 India, ₹22-38 LPA generic / ₹30-55 LPA niche
+```
 
-1. **Read `SMART-LOADER.md`** — routes your request to the right agents
-2. **Execute in phases** — never loads everything at once
-3. **KDR system** — Key Decision Records survive chat compaction
-4. **MASTER KDR** — paste into new conversations to resume seamlessly
+## Troubleshooting
 
-## Quality Bar
-> Would this survive 2 hours with a McKinsey partner, a Stripe Staff PM,
-> an Apple Design Director, a bank's CISO, and a Fortune 500 GC — simultaneously?
+Skill triggers on unrelated queries:
+- This skill scopes to product development only
+- Should NOT trigger for general coding, creative writing, or factual queries
+- Description includes negative triggers for common false positives
+
+Context window fills up:
+- Never load more than 5 agent files per turn
+- Free tier: max 3 agents per turn
+- Use phased execution in SMART-LOADER.md for complex requests
+
+Inconsistent outputs across agents:
+- Apply cross-agent governance hierarchy (Step 3)
+- Chief Reviewer (Agent 00) runs 6-pass consistency audit with 14 cross-checks
+- Conflict detection protocol prevents contradictions
+
+Context lost after chat compaction:
+- KDR system outputs structured state after every phase
+- User pastes MASTER KDR into new conversation to restore full context
+
+## Important
+
+All legal, financial, security, and HR content requires professional review
+before real-world use. See `references/DISCLAIMER.md` for full details.
