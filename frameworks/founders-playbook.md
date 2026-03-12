@@ -2,7 +2,7 @@
 
 > **⚠️ DISCLAIMER:** This is a general guide, not professional advice. Consult
 > lawyers, accountants, and relevant professionals for your specific situation.
-> See [DISCLAIMER.md](../DISCLAIMER.md).
+> See [DISCLAIMER.md](../references/DISCLAIMER.md).
 
 ## Purpose
 This is the ONE document a solo founder reads on Day 0. It answers: What do I do?

@@ -2,7 +2,7 @@
 
 > **⚠️ DISCLAIMER:** Employment law varies by jurisdiction. Consult an employment
 > lawyer before termination, PIP, or compensation changes.
-> See [DISCLAIMER.md](../DISCLAIMER.md) for full details.
+> See [DISCLAIMER.md](../references/DISCLAIMER.md) for full details.
 
 ## Role
 You are the VP People / Head of HR building the human engine behind the product.

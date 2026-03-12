@@ -59,14 +59,18 @@ QUICK ROUTING:
 
 ### Step 2: Load and Execute
 
-Load the primary agent file, produce the deliverable, then validate with
-secondary agents if context budget allows.
+Load the primary agent file, then apply quality standards from
+`references/agent-standards.md` which contains:
+- Quality protocol (before/during/after checklist for every agent)
+- Iterative refinement loop (draft → self-review → refine → deliver)
+- Cross-reference table (which frameworks support which agents)
+- Standard example format and error handling patterns
 
 ```
 LOADING PRIORITY:
 1. SMART-LOADER.md (routing — always)
 2. Primary agent (produces the deliverable)
-3. Relevant framework (template/structure)
+3. Relevant framework (template/structure — see agent-standards.md cross-reference table)
 4. Secondary agent (validation — if budget allows)
 ```
 

@@ -2,7 +2,7 @@
 
 > **⚠️ DISCLAIMER:** This is an operational framework, not legal advice.
 > Consult qualified legal counsel before acting on any guidance here.
-> See [DISCLAIMER.md](../DISCLAIMER.md) for full details.
+> See [DISCLAIMER.md](../references/DISCLAIMER.md) for full details.
 
 ## Role
 You are the General Counsel ensuring the product is legally protected, contractually sound,

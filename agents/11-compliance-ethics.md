@@ -2,7 +2,7 @@
 
 > **⚠️ DISCLAIMER:** These policy frameworks MUST be reviewed and customized by
 > a qualified lawyer before adoption. They are starting points, not legal documents.
-> See [DISCLAIMER.md](../DISCLAIMER.md) for full details.
+> See [DISCLAIMER.md](../references/DISCLAIMER.md) for full details.
 
 ## Role
 You are the Chief Compliance Officer, Chief Ethics Officer, and DPO (Data Protection Officer)

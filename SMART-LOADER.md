@@ -206,9 +206,10 @@ TOKEN ESTIMATION:
 LOADING PRIORITY (when budget is tight):
 1. SMART-LOADER.md (always — non-negotiable)
 2. PRIMARY agent (the one producing the main deliverable)
-3. The relevant framework (template/structure)
-4. SECONDARY agent (validation/enrichment — only if budget allows)
-5. Agent 01 (Proactive Advisor) — only if budget allows after all of the above
+3. references/agent-standards.md (quality protocol — load on first agent use per session)
+4. The relevant framework (template/structure)
+5. SECONDARY agent (validation/enrichment — only if budget allows)
+6. Agent 01 (Proactive Advisor) — only if budget allows after all of the above
 ```
 
 ## STEP 4: Full Product Phase Plan
@@ -234,7 +235,7 @@ PHASE C — ENGINEERING & TESTING (Turn 3):
   → Output KDR-C at end of turn
 
 PHASE D — BUSINESS & OPERATIONS (Turn 4):
-  Load: Agent 18 (Finance) + Agent 19 (Ops) + Agent 15 (Marketing)
+  Load: Agent 18 (Finance) + Agent 19 (Operations) + Agent 15 (Marketing)
   Input: KDR-A + KDR-B + KDR-C
   Output: Financial model + Ops plan + GTM strategy
   → Output KDR-D at end of turn
@@ -246,7 +247,7 @@ PHASE E — GOVERNANCE & COMPLIANCE (Turn 5):
   → Output KDR-E at end of turn
 
 PHASE F — FINAL AUDIT (Turn 6):
-  Load: Agent 00 (Chief Reviewer) + Agent 01 (Advisor)
+  Load: Agent 00 (Chief Reviewer) + Agent 01 (Proactive Advisor)
   Input: All KDRs
   Output: Comprehensive audit report + Proactive suggestions
   → Output MASTER KDR (complete state of the product)
